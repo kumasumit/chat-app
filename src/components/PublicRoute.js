@@ -1,6 +1,5 @@
 import React from 'react';
-import { Redirect } from 'react-router';
-import { Route } from 'workbox-routing';
+import { Redirect, Route } from 'react-router-dom';
 
 const PublicRoute = ({ children, ...routeProps }) => {
   const profile = false;

@@ -1,5 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/database';
+
 const config = {
   apiKey: 'AIzaSyB1vG_dFSEgye03SsrAXLr8zTc-gXeBP2M',
   authDomain: 'chat-web-app-ada7f.firebaseapp.com',
@@ -11,3 +14,5 @@ const config = {
 };
 
 const app = firebase.initializeApp(config);
+export const auth = app.auth();
+export const database = app.database();

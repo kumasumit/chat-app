@@ -1,14 +1,13 @@
 import React from 'react';
-import { Redirect } from 'react-router';
-import { Route } from 'workbox-routing';
+import { Redirect, Route } from 'react-router-dom';
 
-const PrivateRoute = ({ children, ...routeprops }) => {
+const PrivateRoute = ({ children, ...routeProps }) => {
   const profile = true;
   if (!profile) {
     return <Redirect to="/signin" />;
   }
 
-  return <Route {...routeprops}>{children}</Route>;
+  return <Route {...routeProps}>{children}</Route>;
 };
 
 export default PrivateRoute;
