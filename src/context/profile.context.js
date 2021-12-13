@@ -47,5 +47,5 @@ export const ProfileProvider = ({ children }) => {
 };
 
 export const useProfile = () => {
-  useContext(ProfileContext);
+  return useContext(ProfileContext);
 };
