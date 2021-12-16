@@ -5,7 +5,7 @@ import { useParams } from 'react-router';
 import { useProfile } from '../../../context/profile.context';
 import { database } from '../../../misc/firebase';
 import AttachmentBtnModal from './AttachmentBtnModal';
-import AudioMsgBtn from './AudioMsgBtn';
+import AudioMsgBtn from './AudioMsgButton';
 
 function assembleMessage(profile, chatId) {
   return {
